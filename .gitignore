@@ -1,0 +1,25 @@
+/Library
+/Logs
+/Temp
+/.vsconfig
+/*.sln
+/*.csproj
+/.vs
+/obj
+/bin
+/UserSettings
+/Assets/Test
+/Assets/Test.meta
+/test_BurstDebugInformation_DoNotShip
+/*.apk
+/Assets/AddressableAssetsData/Android
+/Assets/AddressableAssetsData/Android.meta
+/Assets/AddressableAssetsData/link.xml
+/Assets/AddressableAssetsData/link.xml.meta
+/Assets/TextMesh Pro/Resources/Fonts & Materials/Font/ZhiJiaGeZhengCuHeiTi-1 SDF.asset
+/Assets/TextMesh Pro/Resources/Fonts & Materials/Font/ZhiJiaGeZhengCuHeiTi-1 SDF.asset.meta
+/Assets/StreamingAssets/build_info
+/Assets/StreamingAssets/build_info.meta
+/Assets/StreamingAssets
+/Assets/IL/Generate
+/Assets/IL/Generate.meta
