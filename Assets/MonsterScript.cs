@@ -57,16 +57,16 @@ public class MonsterScript : MonoBehaviour
             Vector3 position = new Vector3(objInfo.currentPosition.x,0 , objInfo.currentPosition.y);
             if (objInfo.modelId == 1)
             {
-                scenObjMap.Add(objInfo.objId, Instantiate(ostrich, position, Quaternion.identity));
+                scenObjMap.TryAdd(objInfo.objId, Instantiate(ostrich, position, Quaternion.identity));
             } else if (objInfo.modelId == 2)
             {
-                scenObjMap.Add(objInfo.objId, Instantiate(bear, position, Quaternion.identity));
+                scenObjMap.TryAdd(objInfo.objId, Instantiate(bear, position, Quaternion.identity));
             } else if (objInfo.modelId == 3)
             {
-                scenObjMap.Add(objInfo.objId, Instantiate(buffalo, position, Quaternion.identity));
+                scenObjMap.TryAdd(objInfo.objId, Instantiate(buffalo, position, Quaternion.identity));
             } else if (objInfo.modelId == 4) 
             {
-                scenObjMap.Add(objInfo.objId, Instantiate(zebra, position, Quaternion.identity));
+                scenObjMap.TryAdd(objInfo.objId, Instantiate(zebra, position, Quaternion.identity));
             }
             else if (objInfo.modelId == 100)
             {
@@ -96,7 +96,7 @@ public class MonsterScript : MonoBehaviour
                 scriptCamera.focus = foucs.transform;
                 playerControl = playerObj.GetComponent<PlayerControl>();
                 playerControl.SetPlayer(playerObj, objInfo.objId);
-                scenObjMap.Add(objInfo.objId, playerObj);
+                scenObjMap.TryAdd(objInfo.objId, playerObj);
             }
         }
     }
